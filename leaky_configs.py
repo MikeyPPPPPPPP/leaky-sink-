@@ -6,7 +6,7 @@ import sys, json
 
 class low_hanging_fruit:
 	def __init__(self, hosts: str):
-		self.temp_directory = host + "_temp"
+		self.temp_directory = hosts + "_temp"
 		os.mkdir(self.temp_directory)
 		self.hosts: list[str] = hosts
 		self.found: dict[str:dict[str:str]] = {}
